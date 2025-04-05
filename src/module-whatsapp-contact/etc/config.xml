@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <eloom_whatsapp_contact>
+            <general>
+                <active>1</active>
+                <button_text>Entre em contato</button_text>
+                <welcome_message><![CDATA[Olá, eu gostaria de saber mais a respeito ...]]></welcome_message>
+            </general>
+            <frontend>
+                <position>bottom-right</position>
+                <color>#075e54</color>
+            </frontend>
+        </eloom_whatsapp_contact>
+    </default>
+</config>
