@@ -1,0 +1,15 @@
+<?php
+/** @var $block Eloom\WhatsAppContact\Block\Html\Icon */
+?>
+
+<a target="_blank"
+   id="whatsapp"
+   href="javascript:void(0);"
+   class="whatsapp float float-<?=$block->getPosition(); ?> float-floating"
+   style="background-color: <?=$block->getColor(); ?>">
+    <i class="whatsapp-icon"></i>
+</a>
+<div class="whatsapp label-container label-container-<?=$block->getPosition(); ?> float-floating">
+    <div class="label-text"><?=$block->getButtonText(); ?></div>
+    <i class="icon icon-play label-arrow"></i>
+</div>

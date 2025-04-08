@@ -4,14 +4,12 @@
     <default>
         <eloom_whatsapp_contact>
             <general>
-                <active>1</active>
+                <active>0</active>
                 <button_text>Entre em contato</button_text>
                 <welcome_message><![CDATA[Olá, eu gostaria de saber mais a respeito ...]]></welcome_message>
-            </general>
-            <frontend>
                 <position>bottom-right</position>
-                <color>#075e54</color>
-            </frontend>
+                <color>#25d366</color>
+            </general>
         </eloom_whatsapp_contact>
     </default>
 </config>

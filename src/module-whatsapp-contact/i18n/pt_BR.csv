@@ -1,11 +1,21 @@
 # -- A
 
+# -- B
+"Button Text","Texto do botão"
+
+# -- C
+"Color","Cor"
+
 # -- D
+
+# -- G
+"General Settings","Configurações Gerais"
 
 # -- I
 "Installed version","Versão instalada"
 
 # -- P
+"Position","Posição"
 
 # -- R
 "Releases","Versões"
@@ -14,3 +24,8 @@
 
 # -- U
 "User Guide","Guia do usuário"
+
+# -- W
+"Welcome Message","Mensagem de boas-vindas"
+"WhatsApp Contact","WhatsApp Contato"
+"WhatsApp Contact Module","Módulo WhatsApp Contato"

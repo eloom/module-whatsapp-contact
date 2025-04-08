@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<include xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_include.xsd">
+
+	<field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+		<label>Active</label>
+		<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+		<comment></comment>
+	</field>
+
+	<field id="header" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="0">
+		<label><![CDATA[General Settings]]></label>
+		<frontend_model>Magento\Config\Block\System\Config\Form\Field\Heading</frontend_model>
+		<depends>
+			<field id="active">1</field>
+		</depends>
+	</field>
+
+	<field id="mobile_number" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="0">
+		<label><![CDATA[Mobile Number]]></label>
+		<depends>
+			<field id="active">1</field>
+		</depends>
+		<validate>required-entry validate-number</validate>
+	</field>
+	<field id="button_text" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="0">
+		<label><![CDATA[Button Text]]></label>
+		<depends>
+			<field id="active">1</field>
+		</depends>
+		<validate>required-entry</validate>
+	</field>
+	<field id="welcome_message" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="0">
+		<label><![CDATA[Welcome Message]]></label>
+		<depends>
+			<field id="active">1</field>
+		</depends>
+		<validate>required-entry</validate>
+	</field>
+	<field id="position" translate="label" type="select" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="0">
+		<label><![CDATA[Position]]></label>
+		<depends>
+			<field id="active">1</field>
+		</depends>
+		<validate>required-entry</validate>
+		<source_model>Eloom\WhatsAppContact\Model\Config\Source\Position</source_model>
+		<comment></comment>
+	</field>
+	<field id="color" translate="label" type="select" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="0">
+		<label><![CDATA[Color]]></label>
+		<depends>
+			<field id="active">1</field>
+		</depends>
+		<validate>required-entry</validate>
+		<source_model>Eloom\WhatsAppContact\Model\Config\Source\Color</source_model>
+		<comment></comment>
+	</field>
+</include>

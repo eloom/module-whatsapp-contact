@@ -4,7 +4,7 @@
 	<system>
 		<section id="eloom_whatsapp_contact" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
 			<class>separator-top</class>
-			<label>WhatsApp Contact</label>
+			<label>WhatsApp Contact Module</label>
 			<tab>eloom</tab>
 			<resource>Eloom_WhatsAppContact::config</resource>
 
@@ -24,11 +24,7 @@
 
 			<group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
 				<label>WhatsApp Contact</label>
-				<field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
-					<label>Active</label>
-					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-					<comment></comment>
-				</field>
+				<include path="Eloom_WhatsAppContact::system/settings.xml"/>
 			</group>
 		</section>
 	</system>
